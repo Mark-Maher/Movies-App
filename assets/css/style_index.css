@@ -1,0 +1,399 @@
+/* ======================== General Css ========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: unset!important;
+}
+body
+{
+    background-color: #0D0D0D;
+    font-family: Segoe UI Light;
+}
+a ,li{
+    text-decoration: none;
+    list-style-type: none;
+}
+:root {
+    --main-color: #000;
+    --secondary-color :#fff;
+}
+::selection
+{
+    background-color: #fff;
+    color: var(--main-color);
+}
+::-webkit-scrollbar 
+{
+width: 10px;
+}
+::-webkit-scrollbar-track 
+{
+background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: #888;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px; -ms-border-radius:10px; 
+    -o-border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover 
+{
+background: #555;
+}
+#search
+{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    border: 2px solid #F8F6F6;
+}
+/*========================= NavBar ========================*/
+nav
+{
+    width: 60px;
+    background-color: #f8f6f6;
+    z-index: 999999;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+nav .nav-logo
+{
+    padding: 25px 0;
+}
+nav .nav-logo img
+{
+    height: 48px;
+    user-select: none;
+}
+nav .nav-menu
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+nav .nav-menu i 
+{
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+nav .nav-social
+{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.nav-social i
+{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.side-nav
+{
+	background-color: #000;
+	width: 250px;
+	z-index: 99999;
+	padding: 0 30px;
+	margin-left: -250px;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+.menu ul
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 300px;
+}
+.menu ul li a
+{
+    color: #f9f6f6!important;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.menu ul li a:hover
+{
+    color: #ff655c!important;
+}
+.copyrights
+{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.copyrights p
+{
+    color: rgb(153, 153, 153)!important;
+}
+.rights-social a
+{
+    color: #f9f6f6;
+    padding-left: 15px;
+    font-size: 14px;
+}
+/*========================= Home Section ========================*/
+
+.item
+{
+    width: 90%;
+    margin: auto;
+}
+
+.cardImage 
+{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.cardImage img
+{
+   transition: all 0.5s ease-in-out;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+}
+.cardImage img.animate
+{
+    transform: rotate(5deg) scale(1.25);
+    -webkit-transform: rotate(5deg) scale(1.25);
+    -moz-transform: rotate(5deg) scale(1.25);
+    -ms-transform: rotate(5deg) scale(1.25);
+    -o-transform: rotate(5deg) scale(1.25);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.overlay
+{
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.overlay .title
+{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    user-select: text;
+}
+.overlay .date{
+    font-style: italic;
+}
+.overlay .desc{
+   color: #EDEDED;
+   user-select: text;
+}
+.overlay .vote
+{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/*========================= Contact Section ========================*/
+#contact .form-control
+{
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-color: #CED4DA;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    color: #fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+#contact .form-control::placeholder
+{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: none;
+  }
+
+.form-btn
+{
+    background-color: var(--main-color);
+    color: #fff!important;
+    padding: 10px 25px;
+    transition: all 0.2s ease-in-out;
+    border: none;
+}
+.form-btn:hover
+{
+    color: #000!important;
+    background-color: #F8F6F6;
+}
+.showPass
+{
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.error
+{
+    color: rgb(214, 46, 51);
+    position: absolute;
+    font-weight: 700;
+}
+
+
+
+/* ======================== back-to-top ========================*/
+#back-to-top {
+    position: fixed;
+    background-color: var(--main-color);
+    height: 40px;
+    width: 40px;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    -webkit-box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+#back-to-top i
+{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#back-to-top a {
+    color: #fff;
+}
+#back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+/* ======================== loading screen ========================*/
+.loading
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 

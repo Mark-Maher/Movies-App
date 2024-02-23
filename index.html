@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
+    <title>Movie App</title>
+    <meta content="Movie App" name="description">
+    <meta content="movie,movies,trending,popular,running,current,films" name="keywords">
+    <meta property="og:site_name" content="Movie App">
+    <meta property="og:title" content="Movie App">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="getting movie information">
+    <meta name="author" content="Mark Maher">
+    <meta property="og:image" content="https://develekko.github.io/movie/assets/images/logo.png">
+    <meta property="og:url" content="https://develekko.github.io/movie">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:image:alt" content="Movie logo"/>
+    <meta itemprop="image" content="https://develekko.github.io/movie/assets/images/logo.png">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style_index.css">
+    <link rel="stylesheet" href="assets/css/media_index.css">
+</head>
+<body>
+    <!-- =============== Slide Navbar ================= -->
+    <nav class="position-fixed top-0 start-0 vh-100 text-center">
+        <div class="nav-logo">
+            <img src="assets/images/logo.png" class="img-fluid" alt="">
+        </div>
+        <div class="nav-menu">
+            <i class="fa-solid fa-align-justify"></i>
+        </div>
+        <div class="nav-social">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </nav>
+    <div class="side-nav position-fixed top-0 start-0 vh-100">
+        <div class="menu">
+            <ul>
+                <li><a attr="nowPlaying">Now playing</a></li>
+                <li><a attr="popular">Popular</a></li>
+                <li><a attr="topRated">Top Rated</a></li>
+                <li><a attr="trending">Trending</a></li>
+                <li><a attr="upcoming">Upcoming</a></li>
+                <li><a section="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="copyrights">
+            <div class="rights-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div>
+            <p class="pt-3">Copyright © 2022 All Rights Reserved. <br>Created by <a href="https://github.com/Mark-Maher" class="link-danger fw-bold" target="_blank">Mark Maher</a></p>
+        </div>
+    </div>
+    <!-- =============== Hero ssection ================= -->    
+    <section id="hero" class="container py-5">
+        <input id="search" type="search" placeholder="Search" class="form-control w-50 mx-auto bg-transparent rounded-pill text-white shadow-none border-white px-3">
+            <div class="row g-4 mt-3 text-white"></div>
+    </section>
+        <!-- =============== contact ssection ================= --> 
+    <section id="contact" class="container text-white py-5">
+        <h2>Contact US</h2>
+        <form>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <input type="text" required id="name" maxlength="37" class="form-control mt-4" placeholder="Enter Your Name">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" required id="email"  class="form-control mt-4" placeholder="Enter Your Email">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="number"required id="phone" class="form-control mt-4" placeholder="Enter Your Phone">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="number"required id="age"  class="form-control mt-4" placeholder="Enter Your Age">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <input type="password" required id="password" class="form-control mt-4" placeholder="Enter Your Password">
+                    <span Class="error" class="animate__animated"></span>
+                    <span class="showPass"><i data-show="show" class="fa-solid fa-eye-slash"></i></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="password"required id="repassword" class="form-control mt-4" placeholder="ReEnter Password">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-12  mt-4">
+                    <button type="submit" class="form-btn rounded-2 mb-3 animate__animated">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div id="back-to-top"><a href="#"><i class="fa-solid fa-arrow-up-long"></i></a></div>
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js" type="module"></script>
+</body>
+</html>
